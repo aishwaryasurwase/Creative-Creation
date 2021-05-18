@@ -1,0 +1,75 @@
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+.eachColor{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    display: inline-block;
+    margin: 0.5em;
+    border: 1px solid black
+}
+
+#creativesProgress{
+    height: 2em;
+    width: 20em;
+}
+
+#addCreatives{
+    height: 2em;
+}
+
+#done{
+    width: 8em;
+    height: 2em;
+    bottom: 0em; 
+    position: absolute;
+    left: 0
+}
+
+.showCreative{
+    width: 20em;
+    height: 8em;
+    padding-left: 1em;
+    margin-right: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border: 2px solid black;
+    border-radius: 0.5em;
+}
+
+input{
+    width: 25em;
+    height: 2em;
+    margin-bottom: 3em;
+}
+
+#creativeCreation{
+    display: none; 
+    position: relative; 
+    float: right; 
+    top: 0; 
+    margin-right: 3em;
+    position: fixed;
+    right: 0;
+    height: 30em;
+}
+
+label{
+    font-weight: bold;
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}

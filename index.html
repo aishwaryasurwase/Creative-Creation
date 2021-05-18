@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="creativeCreation">
+        <h1>Creative Creation <span style="float: right;" onclick="closeForm()"> X </span></h1>
+        <form id="creativeForm" onsubmit="event.preventDefault(); submitCreative()">
+            <label for="title">title</label> <br>
+            <input type="text" placeholder="This is title!" required> <br>
+
+            <label for="subtitle">subtitle</label> <br>
+            <input type="text" placeholder="This is subtitle!" required> <br>
+
+            <label for="backgroundColor">background color</label> <br>
+
+            <!-- <select name="formColors" id="formColors" required></select> -->
+            <div id="displayColors1" onclick="colorSelected(event)">
+            </div>
+            <button type="submit" id="done">Done</button>
+        </form>
+    </div>
+    <div class="home">
+        <h1>Filter by</h1>
+        <div id="header">
+            <div id="displayColors" onclick="colorSelectedForSearch(event)">
+                <p>color</p>
+            </div>
+            <div id="searchTitle">
+                <h3>title / subtitle</h3>
+                <input type="text" name="searchTitle" id="searchTitleInput"
+                    placeholder="search across title and subtitle" oninput="selectCard(event)">
+            </div>
+        </div>
+
+        <div id="progressCreative">
+            <progress id="creativesProgress" max="5"> 0% </progress> (<span id="countCreative"></span> /5) Creatives
+        </div>
+        <button id="addCreatives" onclick="addCreative()"> + Add Creatives</button>
+    </div>
+
+
+    <div id="showCreatives">
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
